@@ -14,6 +14,9 @@ def swap_elements(array)
   array.sort {|a, b| a[1] <=> b && a.length <=> b.length}
 end
 
+def swap_elements_from_to(array, index, destination_index)
+  array.collect {|a|
+
 def reverse_array(array)
   array.sort {|a,b| array.index(b) <=> array.index(a)}
 end
