@@ -15,7 +15,15 @@ def swap_elements(array)
 end
 
 def swap_elements_from_to(array, index, destination_index)
-  array.collect {|a|
+  array.each_with_index.collect do |a, i|
+    if i == index
+      array[destination_index]
+    elsif i == destination_index
+      array[index]
+    else
+      a
+  end
+end
 
 def reverse_array(array)
   array.sort {|a,b| array.index(b) <=> array.index(a)}
