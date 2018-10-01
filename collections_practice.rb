@@ -22,6 +22,7 @@ def swap_elements_from_to(array, index, destination_index)
       array[index]
     else
       a
+    end
   end
 end
 
